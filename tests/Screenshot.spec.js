@@ -6,7 +6,7 @@ test("page screenshot", async ({ page }) => {
     path: "tests/Screenshot/" + Date.now() + "Homepage.png",
   });
 });
-test.describe(" full page screenshot", async ({ page }) => {
+test(" full page screenshot", async ({ page }) => {
   await page.goto("https://demowebshop.tricentis.com/");
   await page.screenshot({
     path: "tests/Screenshot/" + Date.now() + "Fullpage.png",
